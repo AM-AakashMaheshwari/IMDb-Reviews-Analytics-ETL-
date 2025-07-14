@@ -1,4 +1,6 @@
 
+import pandas as pd
+
 def map_sentiment(rating):
     if pd.isna(rating):
         return 'Neutral'

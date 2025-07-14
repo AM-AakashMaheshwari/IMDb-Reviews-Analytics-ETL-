@@ -1,3 +1,5 @@
+import pyodbc
+from config.dbConfigs import conn_str 
 
 def load_to_mssql(df, table_name, conn_str):
     conn = pyodbc.connect(conn_str)

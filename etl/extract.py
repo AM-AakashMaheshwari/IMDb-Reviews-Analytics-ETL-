@@ -1,17 +1,5 @@
 import pandas as pd
 
-#reading movies from imdb movie files
-# def read_movie_list():
-#     movies_list_df= pd.read_csv("Data/raw/imdb_list.csv")
-#     return movies_list_df
-
-
-
-# #reading reviews from imdb movie reviews file into a dataframe
-# def read_review_list():
-#     movies_review_list_df= pd.read_csv("Data/raw/imdb_reviews.csv")
-#     return movies_review_list_df
-
 
 def extract_csv(path, drop_index=True):
     df = pd.read_csv(path)

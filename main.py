@@ -1,3 +1,6 @@
+from etl.extract import extract_csv, clean_columns
+from etl.transform import generate_dim_movie, generate_fact_review, generate_genre_tables, generate_dim_yearly_summary
+
 def run_etl(imdb_list_path, imdb_reviews_path):
     imdb_list = extract_csv(imdb_list_path)
     imdb_reviews = clean_columns(extract_csv(imdb_reviews_path, drop_index=False))
